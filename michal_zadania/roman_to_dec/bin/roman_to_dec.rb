@@ -21,7 +21,7 @@ def validate_roman? line
     return false unless ROMAN_TO_DEC.key? char
   end
 
-  return true
+  true
 end
 
 def roman_to_dec line
@@ -44,7 +44,7 @@ def roman_to_dec line
     break if i >= i_end
   end
 
-  return sum > 0 ? sum : 'empty line'
+  sum > 0 ? sum : 'empty line'
 end
 
 ####################################### body

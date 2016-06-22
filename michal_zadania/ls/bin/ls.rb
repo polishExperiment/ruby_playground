@@ -2,22 +2,16 @@
 
 # This works for bare 'ls' and partially for 'ls -l'
 
-
-# please ignore this from here --------------------
-
-#puts sprintf("%o",File.world_readable?('kaka'))
-# puts "\n\n\n\n"
-#
 =begin
+please ignore this from here --------------------
+#puts sprintf("%o",File.world_readable?('kaka'))
 s =  File.stat('kaka')
-puts s.inspect
-puts "\n\n\n\n"
 s.mode
 puts sprintf("%o", s.mode)
 puts s.uid
 puts s.gid
+till here ( I will probably need some of that)------
 =end
-# till here ( I will probably need some of that)------
 
 arguments = ARGV
 
