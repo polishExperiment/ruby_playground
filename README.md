@@ -12,14 +12,13 @@ generate_images.sh - script that generates images using ImageMagick
 
 ### codility
 
-https://codility.com/programmers/lessons/
+https://codility.com/programmers/lessons/  
 
-Tajne komplety - Ola and repo: https://github.com/polishExperiment/ruby_playground/tree/master/ruby_hway  
-Jarek took upon themselves solving all Codility lessons in Ruby. I joined them because why not.
+Tajne komplety - Ola and Jarek took upon themselves solving all Codility lessons in Ruby. I joined them because why not.  
 
-Lesson 1
+Lesson 1  
   - binary gap
-Lesson 2
+Lesson 2  
   - cyclic rotation
   - odd occurrences in array   
 
