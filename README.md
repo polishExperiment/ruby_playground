@@ -18,6 +18,7 @@ Tajne komplety - Ola and Jarek took upon themselves solving all Codility lessons
 
 Lesson 1  
   - binary gap  
+  
 Lesson 2  
   - cyclic rotation
   - odd occurrences in array   
