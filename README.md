@@ -17,7 +17,7 @@ https://codility.com/programmers/lessons/
 Tajne komplety - Ola and Jarek took upon themselves solving all Codility lessons in Ruby. I joined them because why not.  
 
 Lesson 1  
-  - binary gap
+  - binary gap  
 Lesson 2  
   - cyclic rotation
   - odd occurrences in array   
