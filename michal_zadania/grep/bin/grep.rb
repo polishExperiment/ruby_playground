@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-def self.colorize text, color_code
+def colorize text, color_code
   "\e[#{color_code}m#{text}\e[0m"
 end
 
@@ -31,9 +31,9 @@ else
     File::open filename do |file|
       file.each do |line|
         if options[:regexp]
-          print Grep::colorize line, 31 if /#{needle}/ =~ line
+          print colorize line, 31 if /#{needle}/ =~ line
         else
-          print Grep::colorize line, 31 if line.include? needle
+          print colorize line, 31 if line.include? needle
         end
       end
     end
