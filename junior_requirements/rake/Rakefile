@@ -1,0 +1,74 @@
+require 'pry'
+
+task default: %w[ship_it:my_task]
+
+namespace :ship_it do
+  desc "comment for the user"
+  task :hello do
+    puts "Hello world!"
+  end
+
+  task :ssh_into_server do
+    puts "ssh into server"
+  end
+
+  task :move_to_directory do
+    puts  "cd to the correct directory"
+  end
+
+  task :pull_code do
+    puts "pulling code from Github"
+  end
+
+  task :get_dependencies do
+    puts "getting the dependencies"
+  end
+
+  task :migrate_the_database do
+    puts "migrating the database"
+  end
+
+  task :set_file_permissions do
+    puts "setting the file permisions"
+  end
+
+  task :symlink_the_new_version do
+    puts "symlinking the new version"
+  end
+
+  task :deploy => [:ssh_into_server, :move_to_directory, :pull_code, :get_dependencies, :migrate_the_database, :set_file_permissions, :symlink_the_new_version] do
+  end
+
+  desc "Example of task with parameters and prerequisites (run with 'rake shipt_it:my_task[one, two]"
+  task :my_task, [:first_arg, :second_arg] => [:move_to_directory, :migrate_the_database] do |t, args|
+    args.with_defaults(:first_arg => "Foo", :last_arg => "Bar")
+    puts "First argument was: #{args.first_arg}"
+    puts "second argument was: #{args.second_arg}"
+  end
+
+  desc "Example of task with invoke (invokes other task within a task)"
+  task :invoke_task do
+    Rake::Task["ship_it:symlink_the_new_version"].invoke
+  end
+end
+
+desc "copy file a to b"
+task :copy_files, [:file, :copy] do |t, args|
+  binding.pry
+  cp(args.file, args.copy, :verbose => true)
+end
+
+desc "move file a to b"
+task :mv_files do
+  mv(File.join('build', 'readme.htm'), File.join('release', 'index.htm'), :verbose => true)
+end
+
+desc "user shell command in a task"
+task :run_command do
+  sh %{ echo kaka }
+  sh %{grep "require" Rakefile} do |ok, res|
+    unless ok
+      puts "pattern not found (status = #{res.exitstatus})"
+    end
+  end
+end

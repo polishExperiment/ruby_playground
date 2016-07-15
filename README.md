@@ -60,3 +60,9 @@ Zed A. Shaw - http://learnrubythehardway.org/book/
 
 http://rubykoans.com/  
 8/282
+
+---
+
+### junior_requirements
+
+  * rake tasks
