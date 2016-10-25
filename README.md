@@ -1,6 +1,6 @@
 # Ruby playground
 
-Not entirely. Apparently there is a place for bash script here as well...
+This is my repository for testing and learning purposes.
 
 ---
 
@@ -12,9 +12,7 @@ generate_images.sh - script that generates images using ImageMagick
 
 ### codility
 
-https://codility.com/programmers/lessons/  
-
-Tajne komplety - Ola and Jarek took upon themselves solving all Codility lessons in Ruby. I joined them because why not.  
+https://codility.com/programmers/lessons/
 
 Lesson 1  
   - binary gap  
