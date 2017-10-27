@@ -64,3 +64,10 @@ http://rubykoans.com/
 ### junior_requirements
 
   * rake tasks
+  
+---
+
+### workshop registration InFakt Cracow October 2017
+
+  * ex1 - hash manipulation excercise
+  * ex2 - string excercise - shift cipher
