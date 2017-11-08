@@ -1,6 +1,6 @@
 # Ruby playground
 
-This is my repository for testing and learning purposes.
+This is my repository for testing and learning.
 
 ---
 
@@ -32,6 +32,12 @@ My solutions to project euler problems in Ruby.
 
 ---
 
+### junior_requirements
+
+  * rake tasks
+  
+---
+
 ### michal_zadania
 
 Ruby implementations of some unix commands and few other assignments. Michal made me do it;)
@@ -47,6 +53,20 @@ Ruby implementations of some unix commands and few other assignments. Michal mad
 
 ---
 
+### playing_with_methods
+
+Practising newly learned methods.
+
+* tap
+
+---
+
+### programming_duck
+
+Questions I want to answer sooner or later.
+
+---
+
 ### ruby_hway
 
 Zed A. Shaw - http://learnrubythehardway.org/book/  
@@ -58,16 +78,12 @@ Zed A. Shaw - http://learnrubythehardway.org/book/
 
 http://rubykoans.com/  
 8/282
-
----
-
-### junior_requirements
-
-  * rake tasks
   
 ---
 
-### workshop registration InFakt Cracow October 2017
+### workshop_registration_infakt_cracow
+
+Workshop registration InFakt Cracow October 2017
 
   * ex1 - hash manipulation excercise
   * ex2 - string excercise - shift cipher
