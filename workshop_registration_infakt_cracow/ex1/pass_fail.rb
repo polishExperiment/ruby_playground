@@ -8,12 +8,12 @@ def passed_or_failed(hash, threshold)
   failed = Hash.new
   passed_failed = Hash.new
 
-  hash.each_pair do |first_name, score|
-    score.to_i >= threshold.to_i ? passed[first_name] = score : failed[first_name] = score
+  {}.tap do |passed_failed|
+    hash.each_pair do |first_name, score|
+      score.to_i >= threshold.to_i ? passed[first_name] = score : failed[first_name] = score
+    end
+    passed_failed[:passed], passed_failed[:failed] = passed, failed
   end
-
-  passed_failed[:passed], passed_failed[:failed] = passed, failed
-  passed_failed
 end
 
 # Example usage for convenience
