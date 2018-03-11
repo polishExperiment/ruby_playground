@@ -57,6 +57,7 @@ Ruby implementations of some unix commands and few other assignments. Michal mad
 
 Practising newly learned methods.
 
+* class
 * tap
 
 ---
