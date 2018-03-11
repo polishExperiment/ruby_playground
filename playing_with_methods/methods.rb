@@ -1,3 +1,11 @@
+# .class
+puts({:hash_key => "hash value"}).class
+puts({hash_key: :"hash value"}.class)
+puts({hash_key: :hash_value}.class)
+puts RUBY_VERSION.class
+puts :kaka.class
+
+# .tap
 (1..10)
   .tap {|x| puts "original: #{x.inspect}"}
   .to_a
